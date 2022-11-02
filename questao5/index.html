@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 5</title>
+</head>
+
+<body>
+    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <h1 style="text-align: center;">QUESTÃO 5 LETRA A</h1>
+        <canvas id="canvas" width="800" height="300"></canvas>
+    </div>
+    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; ">
+        <h1 style="text-align: center;">QUESTÃO 5 LETRA B</h1>
+        <canvas id="canvas2" width="800" height="800" style="margin-left: 12.5rem;"></canvas>
+    </div>
+    <script>
+        var canvas = document.getElementById("canvas");
+        var ctx = canvas.getContext("2d");
+
+        //primeiro desenho
+
+        ctx.beginPath();
+        ctx.strokeStyle = "#000080";
+        ctx.strokeRect(45, 45, 250, 120);
+        ctx.beginPath();
+        ctx.moveTo(220, 140);
+        ctx.lineTo(120, 140);
+        ctx.lineTo(170, 60);
+        ctx.fillStyle = "#6495ED";
+        ctx.fill();
+
+        //segundo desenho
+        ctx.beginPath();
+        ctx.arc(400, 110, 70, 0, 2 * Math.PI);
+        ctx.strokeStyle = "#000080";
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.rect(355, 65, 90, 90);
+        ctx.strokeStyle = "#000080";
+        ctx.fillStyle = "#6495ED";
+        ctx.fill();
+        ctx.stroke();
+
+        //terceiro desenho
+
+        ctx.beginPath();
+        ctx.moveTo(600, 50);
+        ctx.lineTo(530, 170);
+        ctx.lineTo(660, 170);
+        ctx.lineTo(600, 50);
+        ctx.strokeStyle = "#6495ED";
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.moveTo(700, 50);
+        ctx.lineTo(630, 170);
+        ctx.lineTo(760, 170);
+        ctx.lineTo(700, 50);
+        ctx.strokeStyle = "#6495ED";
+        ctx.stroke();
+
+    </script>
+
+    <script>
+
+        var canvas = document.getElementById('canvas2');
+        var ctx = canvas.getContext('2d');
+
+        for (let i = 0; i < 6; i++) {
+            for (let j = 0; j < 3; j++) {
+                //quadrado
+                ctx.beginPath();
+                ctx.strokeStyle = "#000080";
+                ctx.strokeRect(50 * (i + i), 50 * (j + j), 80, 80);
+                //triangulo
+                ctx.beginPath();
+                ctx.moveTo(40 + (100 * i), 20 + (100 * j));
+                ctx.lineTo(65 + (100 * i), 60+ (100 * j));
+                ctx.lineTo(15 + (100 * i), 60 + (100 * j));
+                ctx.lineTo(40 + (100 * i), 20 + (100 * j));
+                ctx.strokeStyle = "#000080"
+                ctx.stroke();
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

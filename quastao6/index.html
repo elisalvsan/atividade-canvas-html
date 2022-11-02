@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 6</title>
+</head>
+
+<body>
+
+    <div>
+        <h1 style="text-align: center;">Questão 6</h1>
+        <canvas id="canvas" width="500" height="300" style="margin-left: 350px;">
+        </canvas>
+    </div>
+
+    <script>
+        var canvas;
+        var ctx;
+        var vx = 10;
+        var vy = 10;
+        var x = 250;
+        var y = 150;
+        var width = 500;
+        var height = 300;
+
+        function Desenhar() {
+            ctx.beginPath();
+            ctx.fillStyle = "purple";
+            ctx.arc(x, y, 10, 0, Math.PI * 2, true);
+            ctx.fill();
+        }
+
+        function LimparTela() {
+            ctx.fillStyle = "white";
+            ctx.strokeStyle = "black";
+            ctx.beginPath();
+            ctx.rect(0, 0, width, height);
+            ctx.closePath();
+            ctx.fill();
+            ctx.stroke();
+        }
+
+        function Iniciar() {
+            canvas = document.getElementById("canvas");
+            ctx = canvas.getContext("2d");
+            return setInterval(Atualizar, 10);
+        }
+
+        function KeyDown(evt) {
+            switch (evt.keyCode) {
+                //seta para cima
+                case 38:
+                    if (y - vy > 0) {
+                        y -= vy;
+                    }
+                    break;
+                case 87:
+                    if (y - vy > 0) {
+                        y -= vy;
+                    }
+                    break;
+                case 119:
+                    if (y - vy > 0) {
+                        y -= vy;
+                    }
+                    break;
+                // seta para baixo
+                case 40:
+                    if (y + vy < height) {
+                        y += vy;
+                    }
+                    break;
+                case 83:
+                    if (y + vy < height) {
+                        y += vy;
+                    }
+                    break;
+                case 115:
+                    if (y + vy < height) {
+                        y += vy;
+                    }
+                    break;
+                // seta para esquerda
+                case 37:
+                    if (x - vx > 0) {
+                        x -= vx;
+                    }
+                    break;
+                case 65:
+                    if (x - vx > 0) {
+                        x -= vx;
+                    }
+                    break;
+                case 97:
+                    if (x - vx > 0) {
+                        x -= vx;
+                    }
+                    break;
+                // seta para direita
+                case 39:
+                    if (x + vx < width) {
+                        x += vx;
+                    }
+                    break;
+                case 68:
+                    if (x + vx < width) {
+                        x += vx;
+                    }
+                    break;
+                case 100:
+                    if (x + vx < width) {
+                        x += vx;
+                    }
+                    break;
+            }
+        }
+
+        function Atualizar() {
+            LimparTela();
+            Desenhar();
+        }
+        window.addEventListener('keydown', KeyDown, true);
+        Iniciar();
+
+
+    </script>
+
+</body>
+
+</html>
