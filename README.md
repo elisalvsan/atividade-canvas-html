@@ -26,14 +26,12 @@ V. No seu diretório pessoal do drive da disciplina, suba um arquivo .txt conten
 
 5 – Escreva códigos para renderizar as figuras a seguir:
 
-a - [Link da resposta]()
-
-b- [Link da resposta]()
+[Link das Respostas](https://github.com/elisalvsan/atividade-canvas-html/blob/main/questao5/index.html)
 
 6 – Faça um código que, renderize um círculo no meio do canvas, e a posição deste círculo deve ser controlada pelas setas do teclado.
 
-[Link da resposta]()
+[Link da resposta](https://github.com/elisalvsan/atividade-canvas-html/blob/main/quastao6/index.html)
 
 7 – Modifique o código anterior e substitua círculo renderizado por uma imagem (.png) da sua escolha.
 
-[Link da resposta]()
+[Link da resposta](https://github.com/elisalvsan/atividade-canvas-html/blob/main/questao7/index.html)
