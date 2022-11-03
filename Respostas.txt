@@ -1,7 +1,23 @@
-1 – Com suas palavras descreva o que é a DOM e qual sua relação com o HTML?
+1 – Com suas palavras descreva o que é a DOM e
+qual sua relação com o HTML?
+
+O DOM ou Document Object Model trata-se de uma interface de programação
+que os navegadores utilizam para representar uma página web. Ele oferece
+um modelo de representação e integração de documentos HTML e XML, onde
+por meio dele é possível que os programas façam alterações na estrutura
+do documento, no seu estilo e no seu conteúdo.
 
 2 – O que é o canvas HTML?
 
-3 – Quais as linguagens e tecnologias comumente envolvidas no desenvolvimento de produtos baseados em canvas html?
+O canvas é um elemento HTML que pode ser utilizado para desenhar gráficos
+utilizando scripts geralmente javascript, além disso ele pode ser usado
+para fazer composições de fotos e também animações.
+
+Tag do canvas -> <canvas></canvas>
+
+3 – Quais as linguagens e tecnologias comumente envolvidas no
+desenvolvimento de produtos baseados em canvas html?
+
+
 
 4 – Explique para que serve o código “document.getElementById()"
