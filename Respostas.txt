@@ -18,6 +18,10 @@ Tag do canvas -> <canvas></canvas>
 3 – Quais as linguagens e tecnologias comumente envolvidas no
 desenvolvimento de produtos baseados em canvas html?
 
-
+Além do próprio HTML se utiliza o javascript que é o mais importante
+e pode se utilizar o css caso queira deixar a página mais estilizada.
 
 4 – Explique para que serve o código “document.getElementById()"
+
+O document.getElementById() é uma função do javascript que serve para
+retornar um elemento do DOM que é identificado por um id especifico.
